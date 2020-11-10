@@ -807,6 +807,7 @@ input[type="number"]:focus {
 
 .catalog-item-info {
 	box-sizing      : border-box;
+	width: 100%;
 	display         : none;
 	position        : absolute;
 	min-height      : 231px;
@@ -815,6 +816,7 @@ input[type="number"]:focus {
 	background-color: var(--basic-background-dark);
 	padding-top     : 28px;
 	padding-bottom  : 44px;
+	
 }
 
 .catalog-item:hover>.catalog-item-info {
