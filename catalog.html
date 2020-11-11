@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <title>Document</title>
 </head>
 
-<body class="inner-page">
+<body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65"
@@ -36,40 +36,56 @@
             <fieldset class="price-filter">
               <legend class="filter-title">Стоимость</legend>
               <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="price-control">
+                  <label>от
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <label>до
+                    <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
               </div>
-              <div class="price-control">
-                <label>от
-                  <input type="number" name="min-price" value="0">
-                </label>
-                <label>до
-                  <input type="number" name="max-price" value="15000">
-                </label>
-              </div>
-            </div>
             </fieldset>
             <fieldset>
               <legend class="filter-title filter-list-title">Сетка</legend>
               <ul class="ctalog-list">
-                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="type" value="adaptive" checked><label for="filter-adaptive">Адаптивная</label></li>
-                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-fixed" name="type" value="fixed"><label for="filter-fixed">Фиксированная</label></li>
-                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-elastic" name="type" value="elastic"><label for="filter-elastic">Резиновая</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" id="filter-adaptive" name="type" value="adaptive" checked><label
+                    for="filter-adaptive">Адаптивная</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" id="filter-fixed" name="type" value="fixed"><label
+                    for="filter-fixed">Фиксированная</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio"
+                    type="radio" id="filter-elastic" name="type" value="elastic"><label
+                    for="filter-elastic">Резиновая</label></li>
               </ul>
             </fieldset>
             <fieldset>
               <legend class="filter-title filter-list-title">Особенности</legend>
-                <ul class="ctalog-list">
-                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked><label for="filter-slider">Слайдер</label></li>
-                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages" type="checkbox" name="advantages"><label for="filter-advantages">Блок преимуществ</label></li>
-                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked><label for="filter-news">Новости</label></li>
-                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery"><label for="filter-gallery">Галерея</label></li>
-                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-curt" type="checkbox" name="curt"><label for="filter-curt">Корзина</label></li>
-                </ul>
+              <ul class="ctalog-list">
+                <li class="filter-option filter-checkbox"><input
+                    class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox"
+                    name="slider" checked><label for="filter-slider">Слайдер</label></li>
+                <li class="filter-option filter-checkbox"><input
+                    class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages" type="checkbox"
+                    name="advantages"><label for="filter-advantages">Блок преимуществ</label></li>
+                <li class="filter-option filter-checkbox"><input
+                    class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox"
+                    name="news" checked><label for="filter-news">Новости</label></li>
+                <li class="filter-option filter-checkbox"><input
+                    class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox"
+                    name="gallery"><label for="filter-gallery">Галерея</label></li>
+                <li class="filter-option filter-checkbox"><input
+                    class="visually-hidden filter-input filter-input-checkbox" id="filter-curt" type="checkbox"
+                    name="curt"><label for="filter-curt">Корзина</label></li>
+              </ul>
             </fieldset>
             <button class="button" type="submit">Показать</button>
           </form>
@@ -83,8 +99,10 @@
               <li class="sorting-item"><a class="sorting-link" href="#">По названию</a></li>
             </ul>
             <ul class="sorting-list direction-list">
-              <li class="direction-item"><a class="direction-link direction-link-decrease sorting-link-active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
-              <li class="direction-item"><a class="direction-link direction-link-ascending" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li class="direction-item"><a class="direction-link direction-link-decrease sorting-link-active"
+                  href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              <li class="direction-item"><a class="direction-link direction-link-ascending" href="#"><span
+                    class="visually-hidden">По возрастанию</span></a></li>
             </ul>
           </div>
           <ul class="catalog-list">

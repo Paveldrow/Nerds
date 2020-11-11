@@ -75,9 +75,21 @@ input[type="radio"].visually-hidden {
 	padding: 0 10px;
 }
 
+.page {
+	height: 100%;
+}
+
+.page-body {
+	min-height        : 100%;
+	display           : grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content     : start;
+}
+
 .main-header {
 	background-color: var(--basic-background-dark);
 }
+
 .main-navigation {
 	display        : flex;
 	justify-content: space-between;
@@ -91,6 +103,11 @@ input[type="radio"].visually-hidden {
 .header-logo {
 	align-self: flex-end;
 }
+
+.header-logo:not([href]):hover {
+	opacity: 0.3;
+}
+
 
 .site-navigation {
 	display        : flex;
@@ -635,7 +652,7 @@ input[type="radio"].visually-hidden {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none; // Yeah, yeah everybody write about it
+	-webkit-appearance: none;
 }
 
 input[type='number'],
