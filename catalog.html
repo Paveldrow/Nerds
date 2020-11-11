@@ -32,7 +32,7 @@
       <div class="shop">
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтр каталога шаблонов</h2>
-          <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="price-filter">
               <legend class="filter-title">Стоимость</legend>
               <div class="range-filter">
@@ -54,21 +54,21 @@
             </div>
             </fieldset>
             <fieldset>
-              <legend class="filter-title">Сетка</legend>
-              <ul>
-                <li><input type="radio" name="type" value="adaptive">Адаптивная</li>
-                <li><input type="radio" name="type" value="fixed">Фиксированная</li>
-                <li><input type="radio" name="type" value="elastic">Резиновая</li>
+              <legend class="filter-title filter-list-title">Сетка</legend>
+              <ul class="ctalog-list">
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-adaptive" name="type" value="adaptive" checked><label for="filter-adaptive">Адаптивная</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-fixed" name="type" value="fixed"><label for="filter-fixed">Фиксированная</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-elastic" name="type" value="elastic"><label for="filter-elastic">Резиновая</label></li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="filter-title">Особенности</legend>
-                <ul>
-                  <li><input type="checkbox" name="Блок преимуществ">Блок преимуществ</li>
-                  <li><input type="checkbox" name="Слайдер">Слайдер</li>
-                  <li><input type="checkbox" name="Новости">Новости</li>
-                  <li><input type="checkbox" name="Галлерея">Галерея</li>
-                  <li><input type="checkbox" name="Корзина">Корзина</li>
+              <legend class="filter-title filter-list-title">Особенности</legend>
+                <ul class="ctalog-list">
+                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked><label for="filter-slider">Слайдер</label></li>
+                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages" type="checkbox" name="advantages"><label for="filter-advantages">Блок преимуществ</label></li>
+                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-news" type="checkbox" name="news" checked><label for="filter-news">Новости</label></li>
+                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" type="checkbox" name="gallery"><label for="filter-gallery">Галерея</label></li>
+                  <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" id="filter-curt" type="checkbox" name="curt"><label for="filter-curt">Корзина</label></li>
                 </ul>
             </fieldset>
             <button class="button" type="submit">Показать</button>
@@ -76,7 +76,7 @@
         </section>
         <section class="catalog">
           <div class="sorting-block">
-            <p class="filter-title">Сортировать</p>
+            <p class="filter-title">Сортировать:</p>
             <ul class="sorting-list">
               <li class="sorting-item"><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
               <li class="sorting-item"><a class="sorting-link" href="#">По типу</a></li>
