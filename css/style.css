@@ -1097,6 +1097,7 @@ fieldset:last-of-type ul {
 }
 
 .form {
+	position: relative;
 	display  : flex;
 	flex-wrap: wrap;
 }
@@ -1163,4 +1164,27 @@ fieldset:last-of-type ul {
 	border       : none;
 	padding-right: 83px;
 	padding-left : 83px;
+}
+
+.modal-close {
+	position: absolute;
+	border: none;
+	width: 21px;
+	height: 21px;
+	background-color: transparent;
+	background-image: url(../img/icon-close-cross.svg);
+	background-repeat: no-repeat;
+	top: 78px;
+	right: 90px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	opacity: 1;
+}
+
+.modal-close:active {
+	opacity: 0.1;
 }
